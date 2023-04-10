@@ -1,0 +1,7 @@
+.button {
+    text-decoration: none;
+    color: #8C031C;
+    padding: 2px;
+    transition: 0.5;
+    font-size: 8px;
+}

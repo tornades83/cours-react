@@ -1,0 +1,358 @@
+
+
+
+.conteneur {
+  width: 1363px;
+  margin: 0 auto;
+}
+
+header {
+  height: 150px;
+  background-color: gainsboro;
+  border-bottom: 1px solid gray;
+}
+
+.normal-flex {
+  display: flex;
+}
+
+.haut-gauche,
+.haut-droite {
+  height: 100px;
+  width: 50%;
+}
+
+.haut-gauche h1 {
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px red;
+}
+
+.haut-gauche strong {
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px;
+}
+
+.haut-gauche strong span {
+  color: darkgoldenrod;
+
+}
+
+.haut-droite a {
+  color: darkgoldenrod;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  text-align: right;
+}
+
+.haut-droite a:hover {
+  color: #8C031C;
+  text-decoration: underline;
+}
+
+nav .conteneur .flex-menu {
+  display: flex;
+  justify-content: space-between;
+  background-color: #A68F4B;
+}
+
+nav .conteneur .flex-menu a {
+  margin: 5px 50px;
+  text-decoration: none;
+  color: #8C031C;
+  padding: 10px;
+  transition: 0.5;
+  font-size: 18px;
+}
+
+nav .conteneur .flex-menu a:hover {
+  color: #400C0C;
+  text-decoration: underline;
+  background-color: #89888C;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+/* zone slider */
+/*#slider{
+  background-color: brown;
+}*/
+#slider .flex-slider {
+  /*  border: 3px solid red;*/
+  display: flex;
+}
+
+figure#milieu-haut-gauche {
+  /*  background-color: aqua;*/
+  width: 40%;
+  overflow: hidden;
+  position: relative;
+}
+
+figure#milieu-haut-gauche img {
+  display: block;
+  width: 100%;
+  transition: 0.5s;
+  scale: 0.9;
+
+}
+
+figure#milieu-haut-gauche:hover img {
+  scale: 1;
+}
+
+figure#milieu-haut-gauche figcaption {
+  background-color: rgba(0, 0, 0, 0.014);
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: .5s;
+}
+
+figure#milieu-haut-gauche:hover figcaption {
+  background-color: #210c832d;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+figure#milieu-haut-gauche figcaption a {
+  background-color: #400c0c98;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+figure#milieu-haut-gauche:hover figcaption a {
+  background-color: rgba(52, 38, 184, 0.062);
+  display: block;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(7, 7, 7);
+}
+
+#milieu-haut-droit {
+  /* background-color: rgb(108, 99, 156); */
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#milieu-haut-droit h2 {
+  margin-bottom: 15px;
+  color: #89888C;
+  font-weight: bold;
+}
+
+.flex-main {
+  display: flex;
+}
+
+main section#presentation {
+  width: 70%;
+}
+
+main section#presentation h2 {
+  border-top: 1px solid #89888C;
+  border-bottom: 1px solid #89888C;
+  font-size: 26px;
+  font-weight: bold;
+  color: #89888C;
+  padding: 10px;
+}
+
+main section#presentation .profil-flex {
+  margin: 20px 0;
+  display: flex;
+}
+
+main section#presentation .profil-flex img {
+  display: block;
+  width: 15%;
+}
+
+main section#presentation .profil-flex p {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  text-align: justify;
+  line-height: 23px;
+  font-size: 15px;
+}
+
+main section#presentation .mise-en-avant {
+  display: flex;
+  justify-content: space-between;
+}
+
+main section#presentation .mise-en-avant figure {
+  height: 260px;
+  width: 25%;
+  margin: 0 5px;
+  align-items: center;
+  position: relative;
+}
+main section#presentation .mise-en-avant figure h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #400c0c98;
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+}
+main section#presentation .mise-en-avant figure img {
+  display: block;
+  position: absolute;
+  width: 50%;
+  transition: 0.5s;
+  margin-left: 25%;
+  top: 40px;
+  left: 0;
+  right: 0;
+}
+main section#presentation .mise-en-avant figure img:hover {
+  transform: rotate(360deg);
+}
+main section#presentation .mise-en-avant figure figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 80px;
+  width: 100%;
+}
+main aside {
+  min-height: 150px;
+  width: 30%;
+  padding-left: 3%;
+}
+main aside div.encart{
+  border: 1px solid #A68F4B ;
+  border-radius: 10px;
+  margin: 15px;
+
+}
+main aside div.encart h3{
+  border-bottom: 1px solid #A68F4B;
+  border-radius: 10px 10px 0 0;
+  background-color: #A68F4B;
+  color: rgb(53, 51, 51);
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+main aside div.encart p{
+  padding: 10px;
+  text-align: justify;
+}
+main aside div.encart form label,
+main aside div.encart form input,
+main aside div.encart form textarea{
+  display: block;
+  width: 90%;
+  margin: 5px auto;
+}
+main aside div.encart form textarea{
+  height: 100px;
+  margin-bottom: 20px;
+}
+main aside div.encart form input[type=submit]{
+  line-height: 30px;
+  background-color: #400c0c;
+  border: 1px solid black;
+  color: white;
+  border-radius: 5px;
+}
+footer{
+height: 150px;
+  display: block;
+background-color: #A68F4B;
+text-align: center;
+top: 700px;
+
+}
+footer .bouton a{
+  color:black;
+  text-align: center;
+display: block;
+
+}
+footer .bouton a:hover{
+color: #400C0C;
+/*background-color: #89888C;
+  border-radius: 10px;
+  font-size: 20px;*/
+}
+
+
+footer  h3{
+text-align: center;
+display: block;
+  font-weight: bold;
+  font-size: 18px;   
+}
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}

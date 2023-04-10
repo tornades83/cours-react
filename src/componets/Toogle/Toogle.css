@@ -1,0 +1,15 @@
+.too {
+    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    background-color: chocolate;
+}
+.button {
+    text-decoration: none;
+    color: #400c0c98;
+    padding: 2px;
+    transition: 0.5;
+    font-size: 10px;
+}

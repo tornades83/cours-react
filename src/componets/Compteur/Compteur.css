@@ -1,0 +1,16 @@
+.com {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+      background-color: rgb(30, 210, 135);
+} 
+
+.button {
+    text-decoration: none;
+    color: #8C031C;
+    padding: 10px;
+    font-size: 25px;
+}
