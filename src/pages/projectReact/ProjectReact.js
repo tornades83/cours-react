@@ -6,7 +6,7 @@ import Toogle from '../../componets/Toogle/Toogle'
 import Compteur from '../../componets/Compteur/Compteur'
 import List from '../../componets/List/List'
 import Object from '../../componets/Object/Object'
-
+import './ProjectReact.css'
 const ProjectReact = (props) => {
 
   return (
@@ -14,7 +14,7 @@ const ProjectReact = (props) => {
     
         <Header name={props.name} />
         <Navbar />
-        <div id='caseproject'>
+        <div id='caseproject' >
             <Toogle />
             <List />
             <Compteur />
