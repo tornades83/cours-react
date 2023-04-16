@@ -21,10 +21,10 @@ const handleIntermediate = () => {
 
   return (
     <div>
-      <h1>currently I am  {State.metier}  {" "}  {State.niveaux} </h1>
-      <button class="button" onClick={() => handleJunior() } >In three months I will be </button>
-      <button class="button" onClick={() => handleIntermediate() } >in a year i will be </button>
-      <button class="button" onClick={() => handleSenior() } >in 5 years i will be </button>
+      <h1>currently I am  {State.metier}  {" "}  {State.niveaux}. </h1>
+      <button className="buttonRoss" onClick={() => handleJunior() } >In three months I will be </button>
+      <button className="buttonRoss" onClick={() => handleIntermediate() } >in a year i will be </button>
+      <button className="buttonRoss" onClick={() => handleSenior() } >in 5 years i will be </button>
       
     </div>
   )

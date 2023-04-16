@@ -33,7 +33,7 @@ const Main = (HandleName) => {
             <div class="profil-flex">
                 <img src={imgyonathan} tilte="photo de yonathan roos" alt="yonathan roos"/>
                 <p>Are you looking for a competent and efficient person to manage your development projects?
-                </p><br/>
+                </p><br />
                 <Object />
             </div>
             <div class="mise-en-avant">

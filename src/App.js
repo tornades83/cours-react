@@ -6,7 +6,7 @@ import Blog from "./pages/Blog/Blog";
 import ProjectReact from './pages/projectReact/ProjectReact';
 function App() {
   //const [name, setName] = useState("Yonathan Ephraim Meir roos");
-  const [name, setName] = useState("Yonathan-Ephraim-Meir-roos");
+  const [name, setName] = useState("Yonathan Ephraim Meir roos");
   // const HandleName = (cb) => {
   // setName(cb)
   // }

@@ -14,10 +14,12 @@ const ProjectReact = (props) => {
     
         <Header name={props.name} />
         <Navbar />
+        <div id='caseproject'>
             <Toogle />
             <List />
             <Compteur />
             <Object />
+            </div>
         <Footer />
     </>
   )
