@@ -9,11 +9,7 @@ import '../../App.css';
 
 const Cv = (props) => {
   
- 
-
- 
- 
- 
+  
   return (
  
 // const [name, setName] = useState("yonathan roos");
