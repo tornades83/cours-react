@@ -1,0 +1,28 @@
+footer{
+    height: 150px;
+      display: block;
+    background-color: #A68F4B;
+    text-align: center;
+    top: 700px;
+    
+    }
+    footer .bouton a{
+      color:black;
+      text-align: center;
+    display: block;
+    
+    }
+    footer .bouton a:hover{
+    color: #400C0C;
+    /*background-color: #89888C;
+      border-radius: 10px;
+      font-size: 20px;*/
+    }
+    
+    
+    footer  h3{
+    text-align: center;
+    display: block;
+      font-weight: bold;
+      font-size: 18px;   
+    }

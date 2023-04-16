@@ -20,7 +20,7 @@ const ProjectReact = (props) => {
             <Compteur />
             <Object />
             </div>
-        <Footer />
+        <Footer name={props.name} />
     </>
   )
 }

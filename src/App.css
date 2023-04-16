@@ -6,7 +6,7 @@
   margin: 0 auto;
 }
 
-header {
+/* header {
   height: 150px;
   background-color: gainsboro;
   border-bottom: 1px solid gray;
@@ -79,26 +79,26 @@ nav .conteneur .flex-menu a:hover {
 /*#slider{
   background-color: brown;
 }*/
-#slider .flex-slider {
-  /*  border: 3px solid red;*/
-  display: flex;
-}
+/* #slider .flex-slider { */
+   /* border: 3px solid red; */
+  /* display: flex; */
+/* } */
 
-figure#milieu-haut-gauche {
+/* figure#milieu-haut-gauche { */
   /*  background-color: aqua;*/
-  width: 40%;
+  /* width: 40%;
   overflow: hidden;
   position: relative;
-}
-
+} */
+/* 
 figure#milieu-haut-gauche img {
   display: block;
   width: 100%;
   transition: 0.5s;
   scale: 0.9;
 
-}
-
+} */
+/* 
 figure#milieu-haut-gauche:hover img {
   scale: 1;
 }
@@ -119,8 +119,8 @@ figure#milieu-haut-gauche:hover figcaption {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
+} */
+/* 
 figure#milieu-haut-gauche figcaption a {
   background-color: #400c0c98;
   height: 100%;
@@ -140,14 +140,14 @@ figure#milieu-haut-gauche:hover figcaption a {
 
 #milieu-haut-droit {
   /* background-color: rgb(108, 99, 156); */
-  width: 60%;
+  /* width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 
-#milieu-haut-droit h2 {
+/* #milieu-haut-droit h2 {
   margin-bottom: 15px;
   color: #89888C;
   font-weight: bold;
@@ -159,8 +159,8 @@ figure#milieu-haut-gauche:hover figcaption a {
 
 main section#presentation {
   width: 70%;
-}
-
+} */
+/* 
 main section#presentation h2 {
   border-top: 1px solid #89888C;
   border-bottom: 1px solid #89888C;
@@ -168,9 +168,9 @@ main section#presentation h2 {
   font-weight: bold;
   color: #89888C;
   padding: 10px;
-}
+} */ 
 
-main section#presentation .profil-flex {
+/* main section#presentation .profil-flex {
   margin: 20px 0;
   display: flex;
 }
@@ -194,9 +194,9 @@ main section#presentation .profil-flex p {
 main section#presentation .mise-en-avant {
   display: flex;
   justify-content: space-between;
-}
+} */
 
-main section#presentation .mise-en-avant figure {
+/* main section#presentation .mise-en-avant figure {
   height: 260px;
   width: 25%;
   margin: 0 5px;
@@ -214,8 +214,8 @@ main section#presentation .mise-en-avant figure h4 {
   left: 0;
   width: 100%;
   height: 30px;
-  line-height: 30px;
-}
+  line-height: 30px; */
+/* }
 main section#presentation .mise-en-avant figure img {
   display: block;
   position: absolute;
@@ -235,8 +235,8 @@ main section#presentation .mise-en-avant figure figcaption {
   left: 0;
   height: 80px;
   width: 100%;
-}
-main aside {
+} */
+/* main aside {
   min-height: 150px;
   width: 30%;
   padding-left: 3%;
@@ -260,8 +260,8 @@ main aside div.encart h3{
 main aside div.encart p{
   padding: 10px;
   text-align: justify;
-}
-main aside div.encart form label,
+} */
+/* main aside div.encart form label,
 main aside div.encart form input,
 main aside div.encart form textarea{
   display: block;
@@ -278,8 +278,8 @@ main aside div.encart form input[type=submit]{
   border: 1px solid black;
   color: white;
   border-radius: 5px;
-}
-footer{
+} */
+/* footer{
 height: 150px;
   display: block;
 background-color: #A68F4B;
@@ -292,27 +292,27 @@ footer .bouton a{
   text-align: center;
 display: block;
 
-}
-footer .bouton a:hover{
+} */ 
+/* footer .bouton a:hover{
 color: #400C0C;
 /*background-color: #89888C;
   border-radius: 10px;
   font-size: 20px;*/
-}
+/* } 
 
 
 footer  h3{
 text-align: center;
 display: block;
   font-weight: bold;
-  font-size: 18px;   
-}
+  font-size: 18px;    */
+/* } 
 
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
-   License: none (public domain)
-*/
+   License: none (public domain) */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,

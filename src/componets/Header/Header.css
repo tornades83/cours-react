@@ -1,0 +1,51 @@
+header {
+    height: 150px;
+    background-color: gainsboro;
+    border-bottom: 1px solid gray;
+  }
+  
+  .normal-flex {
+    display: flex;
+  }
+  
+  .haut-gauche,
+  .haut-droite {
+    height: 100px;
+    width: 50%;
+  }
+  
+  .haut-gauche h1 {
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px red;
+  }
+  
+  .haut-gauche strong {
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px;
+  }
+  
+  .haut-gauche strong span {
+    color: darkgoldenrod;
+  
+  }
+  
+  .haut-droite a {
+    color: darkgoldenrod;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    text-align: right;
+  }
+  
+  .haut-droite a:hover {
+    color: #8C031C;
+    text-decoration: underline;
+  }
+  .text-blue {
+    color: blue;
+  }
+  .text-red {
+color: red;
+  }

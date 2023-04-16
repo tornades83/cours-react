@@ -1,8 +1,10 @@
-import React from 'react'
+import React, {useState} from 'react'
 // import Compteur from "../Compteur/Compteur"
 // import Toogle from "../Toogle/Toogle"
 import "./Header.css"
+import cvyonathanroos23 from "../../assets/cvyonathanroos23.docx"
 const Header = (props) => {
+  // const [changeColor, setchangeColor] = useState("red");
   return (
     <div class="conteneur">
     <div class="normal-flex">
@@ -14,7 +16,7 @@ const Header = (props) => {
             {/* <Compteur /> */}
         </div>
         <div class="haut-droite">
-        <a href="/">Download my C.V.</a>
+        <a href= {cvyonathanroos23} >Download my C.V.</a>
              {/* <Toogle />   */}
           
             
@@ -25,3 +27,4 @@ const Header = (props) => {
 }
 
 export default Header
+// <h1 className={`text-${changeColor}`} onClick={() => setchangeColor("blue")}>{props.name}</h1>

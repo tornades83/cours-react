@@ -1,0 +1,22 @@
+nav .conteneur .flex-menu {
+    display: flex;
+    justify-content: space-between;
+    background-color: #A68F4B;
+  }
+  
+  nav .conteneur .flex-menu a {
+    margin: 5px 50px;
+    text-decoration: none;
+    color: #8C031C;
+    padding: 10px;
+    transition: 0.5;
+    font-size: 18px;
+  }
+  
+  nav .conteneur .flex-menu a:hover {
+    color: #400C0C;
+    text-decoration: underline;
+    background-color: #89888C;
+    border-radius: 10px;
+    font-size: 20px;
+  }
