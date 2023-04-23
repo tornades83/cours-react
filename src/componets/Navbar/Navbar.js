@@ -1,6 +1,6 @@
 import React from 'react'
 import   "./Navbar.css";
-import { Link, link } from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import {Dropdown} from "react-bootstrap"
 const Navbar = () => {
 //  const changeOnOver = () => {
@@ -12,6 +12,7 @@ const Navbar = () => {
     <div class="conteneur">
         <div class="flex-menu" >
            <Link to="/">Accueil</Link>
+           <Link to="/Portfolio">Portfolio</Link>
            <Link to="/cv">Mon C.V.</Link>
            <Link to="/Blog">Blog</Link>
            <Link to="/contact">Contact</Link>
@@ -23,7 +24,7 @@ const Navbar = () => {
 
             <Dropdown.Menu>
               <Dropdown.Item as={Link} to="/useEffectCompa" >UseEffect</Dropdown.Item>
-              <Dropdown.Item >Another action</Dropdown.Item>
+              <Dropdown.Item as={Link} to="/Compteur" >Compteur</Dropdown.Item>
               <Dropdown.Item >Something else</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
