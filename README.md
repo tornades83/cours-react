@@ -69,6 +69,5 @@ collaborate (see also: git help workflows)
 concept guides. See 'git help <command>' or 'git help <concept>'
 to read about a specific subcommand or concept.
 See 'git help git' for an overview of the system.
-ssh-keygen -t rsa -b 4096 -C "meirroos@gmail.com"
-git@github.com:tornades83/cours-react.git
-SHA256:KE5puCdl0s/lu+Qr0Au6fsBlLvHaxg4GEdTDZC7kqgg meirroos@gmail.com
+ssh-keygen -t rsa -b 4096 -C "your@email.com"
+

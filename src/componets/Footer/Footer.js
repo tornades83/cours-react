@@ -3,7 +3,7 @@ import "./Footer.css"
 const Footer = (props) => {
   return (
     <footer>
-		<div class="bouton">
+		<div className="bouton">
 			<a href="/">Imformation</a>-
 			<a href="/">Legal Notice</a>-
 			<a href="contact.html">contact</a>

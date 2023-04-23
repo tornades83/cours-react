@@ -5,7 +5,8 @@ const Portfolio = () => {
 
   return (
   <>
-    <NAvbarA />   
+    <NAvbarA /> 
+      
     <Accordion />
     </> 
   )

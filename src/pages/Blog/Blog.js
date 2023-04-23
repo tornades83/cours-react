@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import Navbar from '../../componets/Navbar/Navbar';
 import Header from '../../componets/Header/Header';
 import Footer from '../../componets/Footer/Footer';
@@ -14,7 +14,7 @@ const Blog = (props) => {
     Hello Blog
     <Accordion />
     </div>
-    <Footer name={props.name} />
+    
    
     </>
   )

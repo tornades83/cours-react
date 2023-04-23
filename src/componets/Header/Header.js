@@ -6,16 +6,16 @@ import cvyonathanroos23 from "../../assets/cvyonathanroos23.docx"
 const Header = (props) => {
   // const [changeColor, setchangeColor] = useState("red");
   return (
-    <div class="conteneur">
-    <div class="normal-flex">
-        <div class="haut-gauche">
+    <div className="conteneur">
+    <div className="normal-flex">
+        <div className="haut-gauche">
             <h1>{props.name}</h1>
             <strong><span>C</span>ommunication</strong>/
             <strong><span>M</span>arketing</strong>/
             <strong><span>D</span>igital</strong>
             {/* <Compteur /> */}
         </div>
-        <div class="haut-droite">
+        <div className="haut-droite">
         <a href= {cvyonathanroos23} >Download my C.V.</a>
              {/* <Toogle />   */}
           

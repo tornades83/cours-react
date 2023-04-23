@@ -25,18 +25,18 @@ const CardPointFort = (props) =>  {
 const Main = (HandleName) => {
   return (
     <main>
-    <div class="conteneur flex-main">
+    <div className="conteneur flex-main">
         <section id="presentation">
             <h2>
                 presentation
             </h2>
-            <div class="profil-flex">
+            <div className="profil-flex">
                 <img src={imgyonathan} tilte="photo de yonathan roos" alt="yonathan roos"/>
-                <p>Are you looking for a competent and efficient person to manage your development projects?
-                </p><br />
-                <Object />
+                <p>Are you looking for a competent and efficient person to manage your development projects?<br/>currently I am Fullstack Dev Training.
+                </p>
+                
             </div>
-            <div class="mise-en-avant">
+            <div className="mise-en-avant">
 
 
             <CardPointFort tilte ='design' img ={imgdesign} alt= {'design'} figcaption={""}/>
@@ -46,11 +46,11 @@ const Main = (HandleName) => {
             </div>
         </section>
         <aside>
-            <div class="encart">
+            <div className="encart">
                 <h3>Qui suis-je ?</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing </p>
             </div>
-            <div class="encart">
+            <div className="encart">
                 <h3>Experience</h3>
                 <ul>
                 <List />
@@ -59,19 +59,19 @@ const Main = (HandleName) => {
                     <il>Experience 3</il><br/> */}
                 </ul>
             </div>
-            <div class="encart">
+            <div className="encart">
                 <h3>Contact</h3>
                
-                    <label for="prenom">Prenom</label>
+                    <label htmlFor="prenom">Prenom</label>
                     <input placeholder="Prenom" type="text" id="prenom" name="prenom"/>
 
-                    <label for="nom">Nom</label>
+                    <label htmlFor="nom">Nom</label>
                     <input placeholder="Nom" type="text" id="nom" name="nom"/>
 
-                    <label for="email">Email</label>
+                    <label htmlFor="email">Email</label>
                     <input placeholder="E-mail" type="text" id="email" name="e-mail"/>
 
-                    <label for="message">Message</label>
+                    <label htmlFor="message">Message</label>
                     <textarea placeholder="Ecrire votre message" id="message" name="message"></textarea>
                     <input type="submit" onClick={()=> HandleName ("test")}/>
                 

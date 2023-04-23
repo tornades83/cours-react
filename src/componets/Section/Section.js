@@ -5,7 +5,7 @@ import "./Sections.css"
 const Section = () => {
   return (
     <section id="slider">
-		<div class="conteneur flex-slider">
+		<div className="conteneur flex-slider">
 			<figure id="milieu-haut-gauche">
 				<a href="/">
 					<img src={imgresponsiv} alt="image qui represente plusieurs ecrans pour le responsive"

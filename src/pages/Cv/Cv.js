@@ -1,9 +1,11 @@
 import React, {useState} from 'react';
+// import {Navbar} from 'react-bootstrap';
 import Navbar from '../../componets/Navbar/Navbar';
 import Header from '../../componets/Header/Header';
 import Main from '../../componets/Main/Main';
 import Section from '../../componets/Section/Section';
 import Footer from '../../componets/Footer/Footer';
+
 
 import '../../App.css';
 

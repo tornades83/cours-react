@@ -7,11 +7,11 @@ import {Link} from 'react-router-dom';
 const PageError = () => {
   return (
     <div className='tromp'>vous vous ete perdu en chemin <br/> rebrouse ton chemin <br/>  click sur la fleche retour en arriere 
-    <img src={imgyonathan} />
+    <img src={imgyonathan} alt="asdfasdfddd" />
     <p>error 404 </p>
-    <link to="/Cv">
+    <Link to="/Cv">
     <Button className="btn.btn.warning" >click Me!</Button>
-     </link>
+     </Link>
     </div>
   
   )
