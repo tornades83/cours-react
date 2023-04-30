@@ -28,7 +28,7 @@ const MouseMove = () => {
   
     return (
       <div>
-          <Link to="/">
+          <Link to="/Cv">
           <button className="btn btn-danger">retour</button></Link>
         <p>Position de la souris :</p>
         <p>

@@ -26,7 +26,7 @@ const Navbar = () => {
               <Dropdown.Item as={Link} to="/useEffectCompa" >UseEffect</Dropdown.Item>
               <Dropdown.Item as={Link} to="/Compteur" >Compteur</Dropdown.Item>
               <Dropdown.Item as={Link} to="/Countinterval" >Countinterval</Dropdown.Item>
-              <Dropdown.Item as={Link} to="/MouseMove" >mouseMove</Dropdown.Item>
+              <Dropdown.Item as={Link} to="/PageUne" >PageUne</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
 
