@@ -44,8 +44,8 @@ const NAvbarA = () => {
              <NavDropdown.Item as={Link} to={"/DeleteArticle"} >DeleteArticle</NavDropdown.Item>
              <NavDropdown.Item as={Link} to={"/RouterGeneral"} >RouterGeneral</NavDropdown.Item>
              <NavDropdown.Item as={Link} to={"/RouteDyn "} >RouteDyn </NavDropdown.Item>
-             <NavDropdown.Item as={Link} to={"/"} ></NavDropdown.Item>
-             <NavDropdown.Item as={Link} to={"/"} ></NavDropdown.Item>
+             <NavDropdown.Item as={Link} to={"/LinkExplication"} >LinkExplication</NavDropdown.Item>
+             <NavDropdown.Item as={Link} to={"/UseLocation"} >UseLocation</NavDropdown.Item>
          </NavDropdown >
         </Nav > 
       </Navbar.Collapse >

@@ -27,6 +27,8 @@ import AddArticle from "./pages/AddArticle/AddArticle"
 import  DeleteArticle from "./pages/DeleteArticle/DeleteArticle"
 import RouterGeneral from "./pages/RouterGeneral/RouterGeneral"
 import RouteDyn  from "./pages/RouteDyn/RouteDyn "
+import LinkExplication from "./pages/LinkExplication/LinkExplication"
+import UseLocation from "./pages/UseLocation/UseLocation"
 function App() {
   //const [name, setName] = useState("Yonathan Ephraim Meir roos");
   const [name, setName] = useState("Yonathan Ephraim Meir roos");
@@ -70,8 +72,8 @@ function App() {
     <Route path="/ DeleteArticle " element={< DeleteArticle  />} /> 
     <Route path="/RouterGeneral" element={<RouterGeneral />} /> 
     <Route path="/RouteDyn " element={<RouteDyn  />} /> 
-    {/* <Route path="/" element={< />} />  */}
-    {/* <Route path="/" element={< />} />  */}
+    <Route path="/LinkExplication" element={<LinkExplication />} /> 
+    <Route path="/UseLocation" element={<UseLocation />} /> 
    
   </Routes>
 </div>
@@ -92,5 +94,5 @@ export default App;
 //  <button className="btn btn-danger">retour</button></Link>
 
 
-// LinkExplication 
-// UseLocation
+//  
+// 
