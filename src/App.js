@@ -57,7 +57,7 @@ function App() {
     <Route path="/Article/:id" element={<Article />} />
     <Route path="/useEffectCompa" element={<UseEffectCompa />} /> 
     <Route path="/Countinterval" element={<Countinterval />} /> 
-     <Route path="/MouseMove" element={<MouseMove />} /> 
+    <Route path="/MouseMove" element={<MouseMove />} /> 
     <Route path="/PageUne" element={<PageUne />} /> 
     <Route path="/StyleGeneral" element={<StyleGeneral />} /> 
     <Route path="/StyleSepare" element={<StyleSepare />} /> 
@@ -73,7 +73,7 @@ function App() {
     <Route path="/RouterGeneral" element={<RouterGeneral />} /> 
     <Route path="/RouteDyn " element={<RouteDyn  />} /> 
     <Route path="/LinkExplication" element={<LinkExplication />} /> 
-    <Route path="/UseLocation" element={<UseLocation />} /> 
+    <Route path="/UseLocation" element={<UseLocation />} />  
    
   </Routes>
 </div>
