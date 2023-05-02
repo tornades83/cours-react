@@ -13,13 +13,13 @@ const Navbar = () => {
         <div className="flex-menu" >
            <Link to="/">Accueil</Link>
            <Link to="/Portfolio">Portfolio</Link>
-           <Link to="/cv">Mon C.V.</Link>
+           <Link to="/cv"> C.V.</Link>
            <Link to="/Blog">Blog</Link>
            <Link to="/contact">Contact</Link>
            {/* <Link to="/ProjectReact">Project</Link> */}
            <Dropdown>
             <Dropdown.Toggle variant="dark" id="dropdown-basic">
-              UseEffect
+             React
             </Dropdown.Toggle>
 
             <Dropdown.Menu>
@@ -27,6 +27,10 @@ const Navbar = () => {
               <Dropdown.Item as={Link} to="/Compteur" >Compteur</Dropdown.Item>
               <Dropdown.Item as={Link} to="/Countinterval" >Countinterval</Dropdown.Item>
               <Dropdown.Item as={Link} to="/PageUne" >PageUne</Dropdown.Item>
+              <Dropdown.Item as={Link} to={"/Countinterval"} >Countinterval</Dropdown.Item>
+            <Dropdown.Item as={Link} to={"/MouseMove"} >mouseMove</Dropdown.Item>
+            <Dropdown.Item as={Link} to={"/UseEffectCompa"} >useEffectCompa</Dropdown.Item>
+            <Dropdown.Item as={Link} to="/PageUne" >PageUne</Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
 

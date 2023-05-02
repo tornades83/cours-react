@@ -1,0 +1,8 @@
+.welcome {
+    /* background-color: rgb(151, 103, 15); */
+    text-align: center;
+    margin-top: 100px;
+    color: rgb(247, 247, 247);
+    font-size:60px!important;
+    text-shadow: 4px 4px 8px #e60b0b!important;
+}

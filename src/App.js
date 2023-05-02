@@ -1,4 +1,6 @@
 import { useState } from "react";
+import Home from "./pages/home/home";
+import Test from './pages/Test/Test';
 import Cv from './pages/Cv/Cv';
 import { Routes, Route } from "react-router-dom";
 import PageError from "./pages/PageError/PageError";
@@ -14,21 +16,32 @@ import Article from "./pages/Article/Article";
 import Countinterval from "./pages/Countinterval/Countinterval";
 import MouseMove from "./pages/MouseMove/MouseMove";
 import PageUne from "./pages/PageUne/PageUne";
-import StyleGeneral from "./pages/StyleGeneral/StyleGeneral"
-import StyleSepare from "./pages/StyleSepare/StyleSepare"
-import StyleBackTick from "./pages/StyleBackTick/StyleBackTick"
-import StyleFonction from "./pages/StyleFonction/StyleFonction"
-import ApiGeneral from "./pages/ApiGeneral/ApiGeneral"
-import AxiosGet from "./pages/AxiosGet/AxiosGet"
-import AxiosPost from "./pages/AxiosPost/AxiosPost"
-import GetArticle  from "./pages/GetArticle/GetArticle "
-import GetArticleBylD from "./pages/GetArticleBylD/GetArticleBylD"
-import AddArticle from "./pages/AddArticle/AddArticle"
-import  DeleteArticle from "./pages/DeleteArticle/DeleteArticle"
-import RouterGeneral from "./pages/RouterGeneral/RouterGeneral"
-import RouteDyn  from "./pages/RouteDyn/RouteDyn "
-import LinkExplication from "./pages/LinkExplication/LinkExplication"
-import UseLocation from "./pages/UseLocation/UseLocation"
+
+import PresUseState from './pages/UseStatesSection/PresUseState';
+import UseStateObject from './pages/UseStatesSection/UseStateObject';
+import UseStateToogle from './pages/UseStatesSection/UseStateToogle';
+import UseStateList from "./pages/UseStatesSection/UseStateList"
+import UseStateNumber from "./pages/UseStatesSection/UseStateNumber"
+
+import PresUseEffect from './pages/UseEffectSection/PresUseEffect';
+import UefVide from './pages/UseEffectSection/UefVide';
+import UseEffectDependance from "./pages/UseEffectSection/UseEffectDependance"
+import UseEffectReturn from "./pages/UseEffectSection/UseEffectReturn"
+import StyleReact from "./pages/StyleReact/StyleReact"
+
+
+import DataTableBasique from './pages/DataTable/DataTableBasique';
+import DataTableFull from './pages/DataTable/DataTableFull';
+import DataTableSort from './pages/DataTable/DataTableSort';
+
+import PresUseRef from './pages/PresUseRef/PresUseRef';
+import AddArticle from './pages/Article/AddArticle';
+import UpdateArticle from './pages/Article/UpdateArticle';
+import DeleteArticle from './pages/Article/DeleteArticle';
+
+
+import Login from "./pages/Login/Login"
+
 function App() {
   //const [name, setName] = useState("Yonathan Ephraim Meir roos");
   const [name, setName] = useState("Yonathan Ephraim Meir roos");
@@ -44,37 +57,55 @@ function App() {
 
 <div>
   <Routes>
-    <Route index element={<Cv name={name} HandleName={HandleName}  />} /> 
+  <Route path="/Home" element={<Home name={name} HandleName={HandleName}  />} />
+    <Route index element={<Home name={name} HandleName={HandleName}  />} /> 
     <Route path="/cv" element={<Cv name={name} HandleName={HandleName}  />} /> 
     <Route path="/Blog" element={<Blog name={name} HandleName={HandleName} />} /> 
-    <Route path="/Compteur" element={<Compteur />} />
+       <Route path="/Compteur" element={<Compteur />} />
     <Route path="/Toogle" element={<Toogle />} />
     <Route path="/List" element={<List />} />
     <Route path="/Object" element={<Object />} />
     <Route path="/ProjectReact" element={<ProjectReact name={name} HandleName={HandleName}  />} />
-    <Route path="*" element={<PageError />} />
+
     <Route path="/Portfolio" element={<Portfolio />} />
     <Route path="/Article/:id" element={<Article />} />
     <Route path="/useEffectCompa" element={<UseEffectCompa />} /> 
     <Route path="/Countinterval" element={<Countinterval />} /> 
     <Route path="/MouseMove" element={<MouseMove />} /> 
-    <Route path="/PageUne" element={<PageUne />} /> 
-    <Route path="/StyleGeneral" element={<StyleGeneral />} /> 
-    <Route path="/StyleSepare" element={<StyleSepare />} /> 
-    <Route path="/StyleBackTick" element={<StyleBackTick />} /> 
-    <Route path="/StyleFonction" element={<StyleFonction />} /> 
-    <Route path="/ApiGeneral" element={<ApiGeneral />} /> 
-    <Route path="/AxiosGet" element={<AxiosGet />} /> 
-    <Route path="/AxiosPost" element={<AxiosPost />} /> 
-    <Route path="/GetArticle " element={<GetArticle  />} /> 
-    <Route path="/GetArticleBylD" element={<GetArticleBylD />} /> 
-    <Route path="/AddArticle" element={<AddArticle />} /> 
-    <Route path="/ DeleteArticle " element={< DeleteArticle  />} /> 
-    <Route path="/RouterGeneral" element={<RouterGeneral />} /> 
-    <Route path="/RouteDyn " element={<RouteDyn  />} /> 
-    <Route path="/LinkExplication" element={<LinkExplication />} /> 
-    <Route path="/UseLocation" element={<UseLocation />} />  
    
+    {/* Section UseState */}
+    <Route path="/PresUseState" element={<PresUseState />} />
+        <Route path="/usfObject" element={<UseStateObject />} />
+        <Route path="/UseStateToogle" element={<UseStateToogle />} />
+        <Route path="/UseStateList" element={<UseStateList />} />
+        <Route path="/UseStateNumber" element={<UseStateNumber />} />
+
+        {/* Section UseEffect */}
+        <Route path="/PresUseEffect" element={<PresUseEffect />} />
+        <Route path="/UefVide" element={<UefVide />} />
+        <Route path="/UseEffectDependance" element={<UseEffectDependance />} />
+        <Route path="/UseEffectReturn" element={<UseEffectReturn />} />\
+
+        {/* Section CSS */}
+        <Route path="/StyleReact" element={<StyleReact />} />
+        <Route path="/Test" element={<Test />} />
+
+
+        <Route path="/DataTableBasique" element={<DataTableBasique />} />
+        <Route path="/DataTableSort" element={<DataTableSort />} />
+        <Route path="/DataTableFull" element={<DataTableFull />} />
+
+        <Route path="/PresUseRef" element={<PresUseRef />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/AddArticle" element={<AddArticle />} />
+        <Route path="/UpdateArticle" element={<UpdateArticle />} />
+        <Route path="/DeleteArticle" element={<DeleteArticle />} />
+
+        <Route path="/PageUne" element={<PageUne />} /> 
+  
+
+        {/* doit etre a la derniere route */}
+      <Route path="*" element={<PageError />} /> 
   </Routes>
 </div>
   );
@@ -89,10 +120,9 @@ export default App;
 // usf
 // faa
 // race
-// 
+ 
 //  <Link to="/Cv"> 
 //  <button className="btn btn-danger">retour</button></Link>
 
 
-//  
-// 
+  

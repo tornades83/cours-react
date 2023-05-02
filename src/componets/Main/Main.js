@@ -22,7 +22,7 @@ const CardPointFort = (props) =>  {
 }
 
 
-const Main = (HandleName) => {
+const Main = ({HandleName}) => {
   return (
     <main>
     <div className="conteneur flex-main">
@@ -59,21 +59,21 @@ const Main = (HandleName) => {
                     <il>Experience 3</il><br/> */}
                 </ul>
             </div>
-            <div className="encart">
-                <h3>Contact</h3>
-               
-                    <label htmlFor="prenom">Prenom</label>
-                    <input placeholder="Prenom" type="text" id="prenom" name="prenom"/>
+            <div className="encart form-group">
+                <h3 className='h3'>Contact</h3>
+                    
+                    <label className='mx-3' htmlFor="prenom">Prenom</label>
+                    <input className='form-control' placeholder="Prenom" type="text" id="prenom" name="prenom"/>
 
-                    <label htmlFor="nom">Nom</label>
-                    <input placeholder="Nom" type="text" id="nom" name="nom"/>
+                    <label className='mx-3' htmlFor="nom">Nom</label>
+                    <input className='form-control' placeholder="Nom" type="text" id="nom" name="nom"/>
 
-                    <label htmlFor="email">Email</label>
-                    <input placeholder="E-mail" type="text" id="email" name="e-mail"/>
+                    <label className='mx-3' htmlFor="email">Email</label>
+                    <input className='form-control' placeholder="E-mail" type="text" id="email" name="e-mail"/>
 
-                    <label htmlFor="message">Message</label>
-                    <textarea placeholder="Ecrire votre message" id="message" name="message"></textarea>
-                    <input type="submit" onClick={()=> HandleName ("test")}/>
+                    <label className='mx-3' htmlFor="message">Message</label>
+                    <textarea className='form-control' placeholder="Ecrire votre message" id="message" name="message"></textarea>
+                    <input className='form-control' type="submit" onClick={()=> HandleName("test")}/>
                 
             </div>
         </aside>

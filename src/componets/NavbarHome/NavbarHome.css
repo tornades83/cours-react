@@ -1,0 +1,27 @@
+body {
+    background-color: beige;
+}
+.navbar {
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+.navbar .rouge {
+    color: red;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+.navbar .rouge:hover {
+    color: orange;
+}
+
+ h1 {
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px red;
+  }
