@@ -9,7 +9,7 @@ const Article = () => {
 let location = useLocation()
 console.log("location", location.pathname.slice(9))
    useEffect(() => {
-    axios.get('https://catch-me-if-you-can--3c240d.appdrag.site/api/getApiId', {
+    axios.get('https://crud-webscoll-98c465.appdrag.site/api/getApiId', {
         params: {
           "id" : location?.pathname?.slice(9),
           "AD_PageNbr" : "1",

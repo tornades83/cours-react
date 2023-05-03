@@ -1,6 +1,6 @@
 import React from 'react'
-import "./Welcome.css"
 import imgprogramming from "../../assets/programming.png"
+import "./Welcome.css"
 const Welcome = () => {
   return (
     <div>

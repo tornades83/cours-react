@@ -39,41 +39,43 @@ const Main = ({HandleName}) => {
             <div className="mise-en-avant">
 
 
-            <CardPointFort tilte ='design' img ={imgdesign} alt= {'design'} figcaption={""}/>
-            <CardPointFort tilte ='Front-end-development' img ={imgintegration} alt= {'Front-end-development'} figcaption={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}/>
-            <CardPointFort tilte ='back-end-development' img ={imgdev} alt= {'back-end-development'} figcaption={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}/>
-            <CardPointFort tilte ='seo' img ={imgseo} alt= {'seo'} figcaption={"Lorem ipsum dolor sit amet consectetur adipisicing elit."}/>
+            <CardPointFort tilte ='design' img ={imgdesign} alt= {'design'} figcaption={"Seduce by offering your visitors navigation and ergonomics adapted to their habits and their equipment."}/>
+            <CardPointFort tilte ='Front-end-development' img ={imgintegration} alt= {'Front-end-development'} figcaption={"Integration responsive design compatible with all browsers and respectful of w3c."}/>
+            <CardPointFort tilte ='back-end-development' img ={imgdev} alt= {'back-end-development'} figcaption={"Perfectly functional and secure development."}/>
+            <CardPointFort tilte ='seo' img ={imgseo} alt= {'seo'} figcaption={"Maximum traffic for your website."}/>
             </div>
         </section>
         <aside>
             <div className="encart">
                 <h3>Qui suis-je ?</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing </p>
+                <p>I'm a junior fullstack developer </p>
             </div>
             <div className="encart">
                 <h3>Experience</h3>
                 <ul>
-                <List />
-                    {/* <il>Experience 1</il><br/>
-                    <il>Experience 2</il><br/>
-                    <il>Experience 3</il><br/> */}
+                
+                    <il>html, css, javaScript</il><br/>
+                    <il>jquery. rest & ajax</il><br/>
+                    <il>react, node.js, </il><br/>{/* mongoDB */}
+                    {/* <il>my SQL, python, php</il><br/> */}
+
                 </ul>
             </div>
             <div className="encart form-group">
                 <h3 className='h3'>Contact</h3>
                     
                     <label className='mx-3' htmlFor="prenom">Prenom</label>
-                    <input className='form-control' placeholder="Prenom" type="text" id="prenom" name="prenom"/>
+                    <input className='form-control'  type="text" id="prenom" name="prenom"/>
 
                     <label className='mx-3' htmlFor="nom">Nom</label>
-                    <input className='form-control' placeholder="Nom" type="text" id="nom" name="nom"/>
+                    <input className='form-control'  type="text" id="nom" name="nom"/>
 
                     <label className='mx-3' htmlFor="email">Email</label>
-                    <input className='form-control' placeholder="E-mail" type="text" id="email" name="e-mail"/>
+                    <input className='form-control' placeholder="email@email.com" type="text" id="email" name="e-mail"/>
 
                     <label className='mx-3' htmlFor="message">Message</label>
                     <textarea className='form-control' placeholder="Ecrire votre message" id="message" name="message"></textarea>
-                    <input className='form-control' type="submit" onClick={()=> HandleName("test")}/>
+                    <input className='form-control btn btn-success' type="submit" onClick={()=> HandleName("test")}/>
                 
             </div>
         </aside>

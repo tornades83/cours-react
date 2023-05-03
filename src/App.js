@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Home from "./pages/home/home";
-import Test from './pages/Test/Test';
 import Cv from './pages/Cv/Cv';
 import { Routes, Route } from "react-router-dom";
 import PageError from "./pages/PageError/PageError";
@@ -16,28 +15,6 @@ import Article from "./pages/Article/Article";
 import Countinterval from "./pages/Countinterval/Countinterval";
 import MouseMove from "./pages/MouseMove/MouseMove";
 import PageUne from "./pages/PageUne/PageUne";
-
-import PresUseState from './pages/UseStatesSection/PresUseState';
-import UseStateObject from './pages/UseStatesSection/UseStateObject';
-import UseStateToogle from './pages/UseStatesSection/UseStateToogle';
-import UseStateList from "./pages/UseStatesSection/UseStateList"
-import UseStateNumber from "./pages/UseStatesSection/UseStateNumber"
-
-import PresUseEffect from './pages/UseEffectSection/PresUseEffect';
-import UefVide from './pages/UseEffectSection/UefVide';
-import UseEffectDependance from "./pages/UseEffectSection/UseEffectDependance"
-import UseEffectReturn from "./pages/UseEffectSection/UseEffectReturn"
-import StyleReact from "./pages/StyleReact/StyleReact"
-
-
-import DataTableBasique from './pages/DataTable/DataTableBasique';
-import DataTableFull from './pages/DataTable/DataTableFull';
-import DataTableSort from './pages/DataTable/DataTableSort';
-
-import PresUseRef from './pages/PresUseRef/PresUseRef';
-import AddArticle from './pages/Article/AddArticle';
-import UpdateArticle from './pages/Article/UpdateArticle';
-import DeleteArticle from './pages/Article/DeleteArticle';
 
 
 import Login from "./pages/Login/Login"
@@ -74,32 +51,32 @@ function App() {
     <Route path="/MouseMove" element={<MouseMove />} /> 
    
     {/* Section UseState */}
-    <Route path="/PresUseState" element={<PresUseState />} />
-        <Route path="/usfObject" element={<UseStateObject />} />
-        <Route path="/UseStateToogle" element={<UseStateToogle />} />
-        <Route path="/UseStateList" element={<UseStateList />} />
-        <Route path="/UseStateNumber" element={<UseStateNumber />} />
+    {/* <Route path="/" element={< />} /> */}
+        {/* <Route path="/" element={< />} /> */}
+        {/* <Route path="/" element={< />} /> */}
+        {/* <Route path="/" element={< />} /> */}
+        {/* <Route path="/" element={< />} /> */}
 
         {/* Section UseEffect */}
-        <Route path="/PresUseEffect" element={<PresUseEffect />} />
-        <Route path="/UefVide" element={<UefVide />} />
-        <Route path="/UseEffectDependance" element={<UseEffectDependance />} />
-        <Route path="/UseEffectReturn" element={<UseEffectReturn />} />\
+        {/* <Route path="/" element={</>} /> */}
+        {/* <Route path="/" element={< />} /> */}
+        {/* <Route path="/" element={< />} /> */}
+        {/* <Route path="/" element={< />} />\ */}
 
         {/* Section CSS */}
-        <Route path="/StyleReact" element={<StyleReact />} />
-        <Route path="/Test" element={<Test />} />
+        {/* <Route path="/" element={< />} /> */}
+        {/* <Route path="/" element={< />} /> */}
 
 
-        <Route path="/DataTableBasique" element={<DataTableBasique />} />
-        <Route path="/DataTableSort" element={<DataTableSort />} />
-        <Route path="/DataTableFull" element={<DataTableFull />} />
+        {/* <Route path="/" element={< />} /> */}
+        {/* <Route path="/" element={< />} /> */}
+        {/* <Route path="/" element={< />} /> */}
 
-        <Route path="/PresUseRef" element={<PresUseRef />} />
+        {/* <Route path="/" element={< />} /> */}
         <Route path="/Login" element={<Login />} />
-        <Route path="/AddArticle" element={<AddArticle />} />
-        <Route path="/UpdateArticle" element={<UpdateArticle />} />
-        <Route path="/DeleteArticle" element={<DeleteArticle />} />
+        {/* <Route path="/" element={< />} /> */}
+        {/* <Route path="/" element={</>} /> */}
+        {/* <Route path="/" element={< />} /> */}
 
         <Route path="/PageUne" element={<PageUne />} /> 
   
@@ -120,7 +97,33 @@ export default App;
 // usf
 // faa
 // race
- 
+
+
+
+// Test
+//   PresUseState 
+//  UseStateObject  
+//  UseStateToogle 
+//  UseStateList 
+//  UseStateNumber
+
+//  PresUseEffect 
+// UefVide
+//  UseEffectDependance 
+//  UseEffectReturn
+//  StyleReact 
+
+
+//  DataTableBasique 
+//  DataTableFull 
+//  DataTableSort 
+
+//  PresUseRef 
+//  AddArticle 
+//  UpdateArticle
+// DeleteArticle    
+
+
 //  <Link to="/Cv"> 
 //  <button className="btn btn-danger">retour</button></Link>
 
