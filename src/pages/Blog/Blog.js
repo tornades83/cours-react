@@ -11,7 +11,6 @@ const Blog = (props) => {
     <Navbar />
     <div className='blog'>
       
-    Hello Blog
     <Accordion />
     </div>
     

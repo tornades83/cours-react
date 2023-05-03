@@ -19,7 +19,7 @@ const NAvbarA = () => {
             <Nav.Link href="/">Accueil </Nav.Link>
             {/* <Nav.Link href="/cv">Mon C.V.</Nav.Link> */}
             <Nav.Link href="/Blog">Blog</Nav.Link>
-            <Nav.Link href="/contact">Contact</Nav.Link>
+            <Nav.Link href="/Cv">Cv</Nav.Link>
             {/* <Nav.Link href="/ProjectReact">Project</Nav.Link> */}
           <NavDropdown title="Dropdown" id="basic-nav-dropdown">
             <NavDropdown.Item as={Link} to={"/Compteur"} >Compteur</NavDropdown.Item>

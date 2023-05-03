@@ -1,17 +1,19 @@
 import React from 'react'
 import {Button} from "react-bootstrap"
-import imgyonathan from "../../assets/profil-yonathan.png";
+import imgAttention  from "../../assets/attention.png"
 import './PageError.css'
 import {Link} from 'react-router-dom';
 
 const PageError = () => {
   return (
-    <div className='tromp'>vous vous ete perdu en chemin <br/> rebrouse ton chemin <br/>  click sur la fleche retour en arriere 
-    <img src={imgyonathan} alt="asdfasdfddd" />
+    <div className="catar">
+    <div className='tromp'>you got lost on the way? <br/> turn back your way. <br/>  click on the button below!
+    <img src={imgAttention} alt="asdfasdfddd" />
     <p>error 404 </p>
-    <Link to="/Cv">
-    <Button className="btn.btn.warning" >click Me!</Button>
+    <Link to="/Home">
+    <Button className="btn.btn.danger" >click Me!</Button>
      </Link>
+    </div>
     </div>
   
   )
