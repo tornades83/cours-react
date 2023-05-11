@@ -1,0 +1,10 @@
+{
+  "header": {},
+  "nav": {
+    "login": "s'authentifier"
+  },
+  "portfolio": {
+    "title": "tous mes projects"
+  },
+  "footer": {}
+}

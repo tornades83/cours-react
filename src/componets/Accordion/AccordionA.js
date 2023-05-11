@@ -1,13 +1,53 @@
 import React, {useEffect, useState} from 'react'
-import Accordion from 'react-bootstrap/Accordion';
-import  alberta from "../../assets/alberta.jpg";
-import sunset from "../../assets/sunset.jpg";
-import tree from "../../assets/tree.jpg";
+// import Accordion from 'react-bootstrap/Accordion';
+// import  alberta from "../../assets/alberta.jpg";
+// import sunset from "../../assets/sunset.jpg";
+// import tree from "../../assets/tree.jpg";
+import axios from "axios"
+import i18n from '../../i18n/config'
+import { Link } from 'react-router-dom';
+
 const AccordionA = () => {
+  const [data, setData] = useState();
+  const [activeFooter, setActiveFooter] = useState(false);
+
+  useEffect(() => {
+    
+    console.log("mon composant est montE")
+
+    axios.get('https://crud-webscoll-98c465.appdrag.site/api/getAlArticle', {
+      params: {
+        "AD_PageNbr": "1",
+        "AD_PageSize": "500"
+      }
+    }).then(function (response) {
+      console.log(response.data.Table);
+      setData(response.data.Table)
+    });
+
+  }, []);
+const [language, setLanguage] = useState();
+  useEffect(() => {
+    const handleChangeLanguage = () => {
+      // La langue a changé, faites quelque chose ici...
+      console.log('La langue a changé ! Nouvelle langue :', i18n.language);
+      setLanguage(i18n.language)
+    };
+    
+    i18n.on('languageChanged', handleChangeLanguage);
+
+    // Nettoyage : supprime l'écouteur d'événement lorsque le composant est démonté
+    return () => {
+      i18n.off('languageChanged', handleChangeLanguage);
+    };
+  }, [i18n]);
+  const HandleFooter = () => {
+    setActiveFooter(!activeFooter)
+  }
   return (
     <>
 
-        <Accordion bg="info" variant="info" defaultActiveKey="0" >
+        {/* <Accordion bg="info" variant="info" defaultActiveKey="0" >
       <Accordion.Item eventKey="0">
       <Accordion.Header>photo coucher de soleil</Accordion.Header>
         <Accordion.Body>
@@ -92,9 +132,37 @@ Que l'on peut admirer à chaque fois qu'il se laisse voir, sans jamais se lasser
       </Accordion.Item>
     </Accordion>
   
- 
+  */}
+  
+
+<div className='container'>
+          <h1>Section Blog</h1>
+          {
+            data?.map((row) => (
+              // je place mon link avec les backticks
+              <Link className='text-decoration-none text-dark' to={`/article/${row.id}`}>
+
+                <div key={row.id} className='bg-secondary shadow-lg rounded m-3 p-3'>
+                  <h2>{ language === "fr" ? row.title : row.titleEn}</h2>
+                  <p>{ language === "fr" ? row.articles.slice(0, 100) : row.articleEn?.slice(0, 100)}...</p>
+                  <img src={row.imageArticle} className='img-fluid' alt="" />
+                  <p>{row.auteur}</p>
+
+                </div>
+              </Link>
+            ))
+          }
+          <Link to="/">
+            <button className="btn btn-primary">retourner a la page initial</button>
+          </Link>
+        </div>
+
+
+        <div>Hello blog</div>
+        <button onClick={() => HandleFooter()} >active Footer</button>
     </>
   )
 };
+
 
 export default AccordionA
