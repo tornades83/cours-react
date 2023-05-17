@@ -2,6 +2,10 @@
   "header": {},
   "nav": {
     "login": "s'authentifier"
+   
+  },
+  "NavDropdown":{
+    "title": "langue"
   },
   "portfolio": {
     "title": "tous mes projects"

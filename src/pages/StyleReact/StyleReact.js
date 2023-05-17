@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import NavbarOffCanva from '../../components/NavbarBoot/NavbarOffCanva'
+import NavbarHome from '../../components/NavbarHome/NavbarHome'
 
 const PresUseState = () => {
 
@@ -32,7 +32,7 @@ const PresUseState = () => {
 
   return (
     <>
-      <NavbarOffCanva />
+      <NavbarHome />
       <div className="container">
 
         <h1 >Le style dans React</h1>

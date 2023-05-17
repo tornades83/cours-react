@@ -2,7 +2,7 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from 'i18next-browser-languagedetector';
 
-const availableLanguages = ['en','fr'];
+const availableLanguages = ['en','fr','he'];
 const options = {
   order: [ 'navigator', 'htmlTag', 'path', 'subdomain'],
   lookupQuerystring: 'lng',
@@ -31,6 +31,9 @@ i18n
       en: {
         translations: require("./locales/en/translations.json"),
       },
+      he: {
+        translations: require("./locales/he/translations.json"),
+      },
       fr: {
         translations: require("./locales/fr/translations.json"),
       }
@@ -40,6 +43,6 @@ i18n
     defaultNS: "translations",
   });
 
-i18n.languages = ["en", "fr"];
+i18n.languages = ["en", "fr","he"];
 
 export default i18n;

@@ -1,11 +1,9 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import imgyonathan from "../../assets/profil-yonathan.png"
 import imgdesign from "../../assets/design.png"
 import imgintegration from "../../assets/integration.png"
 import imgdev from "../../assets/dev.png"
 import imgseo from "../../assets/seo.png"
-import List from '../List/List'
-import Object from '../Object/Object'
 import "./Main.css"
 // video >>>37m.27s
 const CardPointFort = (props) =>  {
@@ -22,7 +20,28 @@ const CardPointFort = (props) =>  {
 }
 
 
-const Main = ({HandleName}) => {
+const Main = () => {
+const [contact, setContact] = useState();
+
+
+   const [fName, setFName] = useState();
+   const [lName, setLName] = useState();
+   const [email, setEmail] = useState();
+   const [message, setMessage] = useState();
+   const axios = require('axios');
+   const handlContact = () => {
+    setContact((getContact)=> ({...getContact, onclick }))  
+   }
+   axios.get('https://crud-webscoll-98c465.appdrag.site/api/getContact', {
+     params: {
+       "fName" : fName,
+       "lName" : lName,
+       "email" : email,
+       "message" : message
+     }
+   }).then(function(response){
+     console.log(response.data);
+   });
   return (
     <main>
     <div className="conteneur flex-main">
@@ -75,7 +94,7 @@ const Main = ({HandleName}) => {
 
                     <label className='mx-3' htmlFor="message">Message</label>
                     <textarea className='form-control' placeholder="Ecrire votre message" id="message" name="message"></textarea>
-                    <input className='form-control btn btn-success' type="submit" onClick={()=> HandleName("test")}/>
+                    <input className='form-control btn btn-success' type="submit" onClick={contact} />
                 
             </div>
         </aside>

@@ -1,6 +1,6 @@
 import React from 'react'
-import NavbarOffCanva from '../../components/NavbarBoot/NavbarOffCanva'
-import Metier from '../../components/Metier/Metier'
+import NavbarHome from '../../components/NavbarHome/NavbarHome'
+import Object from '../../components/Object/Object'
 
 const UseStateObject = () => {
 
@@ -30,7 +30,7 @@ const UseStateObject = () => {
 
     return (
         <>
-            <NavbarOffCanva />
+            <NavbarHome />
             <div className="container">
                 <div className="bg-dark text-light p-5 rounded-4">
                     <pre>
@@ -38,7 +38,7 @@ const UseStateObject = () => {
                     </pre>
                 </div>
 
-                <Metier />
+                <Object />
             </div>
 
 

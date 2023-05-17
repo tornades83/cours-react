@@ -1,5 +1,5 @@
 import React from 'react'
-import NavbarOffCanva from '../../components/NavbarBoot/NavbarOffCanva'
+import NavbarHome from '../../components/NavbarHome/NavbarHome'
 
 const PresUseEffect = () => {
 
@@ -22,7 +22,7 @@ const PresUseEffect = () => {
 
     return (
         <>
-            <NavbarOffCanva />
+            <NavbarHome />
             <div className="container">
                 <h1>Presentation du useEffect</h1>
                 <div className="bg-dark text-light p-5 rounded-4">

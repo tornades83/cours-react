@@ -1,0 +1,13 @@
+{
+  "header": {},
+  "nav": {
+    "login": "התחברות"
+  },
+  "NavDropdown":{
+    "title":"שפה"
+  },
+  "portfolio": {
+    "title": "כל הפרויקטים שלי"
+  },
+  "footer": {}
+}

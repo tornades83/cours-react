@@ -3,6 +3,9 @@
   "nav": {
     "login": "login"
   },
+  "NavDropdown":{
+    "title": "language"
+  },
   "portfolio": {
     "title": "All my projects"
   },

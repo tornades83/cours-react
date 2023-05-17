@@ -1,6 +1,6 @@
 import React from 'react'
-import NavbarOffCanva from '../../components/NavbarBoot/NavbarOffCanva'
-import MouseMove from "../../components/MouseMove/MouseMove"
+import NavbarHome from '../../components/NavbarBoot/NavbarOffCanva'
+import MouseMove from "../../page/MouseMove/MouseMove"
 
 const UseEffectVide = () => {
 
@@ -37,7 +37,7 @@ const UseEffectVide = () => {
 
     return (
         <>
-            <NavbarOffCanva />
+            <NavbarHome />
             <div className="container">
                 <h1>Presentation du useEffect avec un return</h1>
                   <p>Ce useEffect s'activera a chaque fois que le composant est demonté</p>

@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react'
-// import Accordion from 'react-bootstrap/Accordion';
-// import  alberta from "../../assets/alberta.jpg";
-// import sunset from "../../assets/sunset.jpg";
-// import tree from "../../assets/tree.jpg";
+import Accordion from 'react-bootstrap/Accordion';
+import  alberta from "../../assets/alberta.jpg";
+import sunset from "../../assets/sunset.jpg";
+import tree from "../../assets/tree.jpg";
 import axios from "axios"
 import i18n from '../../i18n/config'
 import { Link } from 'react-router-dom';
@@ -47,18 +47,18 @@ const [language, setLanguage] = useState();
   return (
     <>
 
-        {/* <Accordion bg="info" variant="info" defaultActiveKey="0" >
+        <Accordion bg="info" variant="info" defaultActiveKey="0" >
       <Accordion.Item eventKey="0">
-      <Accordion.Header>photo coucher de soleil</Accordion.Header>
+      <Accordion.Header>{ language === "fr" ? Accordion.title :Accordion.titleEn}</Accordion.Header>
         <Accordion.Body>
-        <img src={tree} />
+        <img src={Accordion.imageArticle} className='img-fluid' alt="" />
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">
-        <Accordion.Header>React quesque c"est? </Accordion.Header>
+        <Accordion.Header>{ language === "fr" ? Accordion.title : Accordion.titleEn}</Accordion.Header>
         <Accordion.Body>
-
-React.js est une bibliothèque JavaScript open source développée par Facebook. Elle permet de créer des interfaces utilisateur (UI) dynamiques et réactives. Contrairement aux frameworks traditionnels comme Angular ou Backbone, React.js se concentre uniquement sur la vue d'une application, ce qui permet de créer des interfaces utilisateur modulaires et réutilisables.
+        { language === "fr" ? Accordion.articles.slice(0, 100) : Accordion.articleEn?.slice(0, 100)}...
+{/* React.js est une bibliothèque JavaScript open source développée par Facebook. Elle permet de créer des interfaces utilisateur (UI) dynamiques et réactives. Contrairement aux frameworks traditionnels comme Angular ou Backbone, React.js se concentre uniquement sur la vue d'une application, ce qui permet de créer des interfaces utilisateur modulaires et réutilisables.
 
 React.js utilise un concept appelé « composants ». Les composants sont des éléments d'interface utilisateur réutilisables qui peuvent être utilisés pour créer des pages Web complexes. Les composants peuvent être des éléments d'interface utilisateur simples comme des boutons ou des champs de formulaire, ou des éléments plus complexes comme des tableaux de données ou des graphiques.
 
@@ -66,13 +66,14 @@ L'un des avantages de React.js est sa facilité de compréhension et de prise en
 
 React.js utilise également une approche appelée « Virtual DOM ». Le Virtual DOM est une version légère de l'arbre DOM (Document Object Model) qui est créée et stockée en mémoire. Lorsqu'un changement est apporté à l'interface utilisateur, React.js crée une nouvelle version du Virtual DOM. Il compare ensuite cette nouvelle version à la version précédente, détermine les changements nécessaires et met à jour l'interface utilisateur en conséquence. Cette approche permet d'optimiser les performances de l'interface utilisateur en minimisant le nombre de changements nécessaires pour mettre à jour l'interface utilisateur.
 
-En résumé, React.js est une bibliothèque JavaScript puissante et populaire qui permet de créer des interfaces utilisateur dynamiques et réactives en utilisant des composants réutilisables et une approche innovante de la manipulation de l'interface utilisateur. Si vous souhaitez développer des applications Web modernes, React.js est une bibliothèque que vous devriez certainement considérer.
+En résumé, React.js est une bibliothèque JavaScript puissante et populaire qui permet de créer des interfaces utilisateur dynamiques et réactives en utilisant des composants réutilisables et une approche innovante de la manipulation de l'interface utilisateur. Si vous souhaitez développer des applications Web modernes, React.js est une bibliothèque que vous devriez certainement considérer. */}
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="2">
-        <Accordion.Header>le futur avec l'IA?  </Accordion.Header>
+        <Accordion.Header>{ language === "fr" ? Accordion.title : Accordion.titleEn} </Accordion.Header>
         <Accordion.Body>
-        Cependant, en tant que technologie émergente, l'avenir de l'IA est prometteur et ouvre la voie à de nombreuses applications potentielles dans de nombreux domaines, tels que la médecine, la finance, la sécurité, l'éducation et bien d'autres. De plus en plus d'entreprises et d'organisations adoptent l'IA pour améliorer leur efficacité et leur productivité.
+        { language === "fr" ? Accordion.articles.slice(0, 100) : Accordion.articleEn?.slice(0, 100)}...
+        {/* Cependant, en tant que technologie émergente, l'avenir de l'IA est prometteur et ouvre la voie à de nombreuses applications potentielles dans de nombreux domaines, tels que la médecine, la finance, la sécurité, l'éducation et bien d'autres. De plus en plus d'entreprises et d'organisations adoptent l'IA pour améliorer leur efficacité et leur productivité.
 
 Bien sûr, comme toute technologie, l'IA soulève également des questions et des préoccupations éthiques et sociales, telles que la protection des données, la transparence, la responsabilité et l'impact sur l'emploi et la société dans son ensemble. C'est pourquoi il est important de poursuivre la recherche et le développement de l'IA de manière responsable et éthique, en tenant compte de ces questions et en cherchant des solutions pour les aborder.
 L'Intelligence Artificielle (IA) offre de nombreux avantages et bénéfices sur le futur, notamment dans les domaines suivants :
@@ -91,23 +92,23 @@ L'Intelligence Artificielle (IA) offre de nombreux avantages et bénéfices sur 
 <br/>
 7. Avancées scientifiques : L'IA peut aider à faire des avancées scientifiques en permettant une analyse plus rapide et plus précise des données et en aidant les scientifiques à identifier des modèles dans les données qui pourraient autrement passer inaperçus.
 <br/>
-En somme, l'IA offre de nombreux avantages et peut aider à résoudre certains des problèmes les plus difficiles de notre temps. Cependant, il est également important de reconnaître les limites de l'IA et de continuer à étudier les implications éthiques et sociales de son utilisation pour s'assurer que nous maximisons les avantages tout en minimisant les risques.
+En somme, l'IA offre de nombreux avantages et peut aider à résoudre certains des problèmes les plus difficiles de notre temps. Cependant, il est également important de reconnaître les limites de l'IA et de continuer à étudier les implications éthiques et sociales de son utilisation pour s'assurer que nous maximisons les avantages tout en minimisant les risques. */}
 
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="3">
-      <Accordion.Header>photo manifique</Accordion.Header>
+      <Accordion.Header>{ language === "fr" ? Accordion.title : Accordion.titleEn}</Accordion.Header>
         <Accordion.Body>
-        <img src={alberta} />
+        <img src={Accordion.imageArticle} className='img-fluid' alt="" />
       
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="4 ">
-      <Accordion.Header>poeme sur le coucher du soleil</Accordion.Header>
+      <Accordion.Header>{ language === "fr" ? Accordion.title : Accordion.titleEn}</Accordion.Header>
         <Accordion.Body>
-        
+        { language === "fr" ? Accordion.articles.slice(0, 100) : Accordion.articleEn?.slice(0, 100)}...
 
-Le soleil doucement s'endort,
+{/* Le soleil doucement s'endort,
 Dans un éclat de couleurs d'or,
 Le ciel se pare de rouge et d'orange,
 Et la nature se met en mode étrange.
@@ -125,17 +126,17 @@ Pour une nuit paisible et sans pareille.
 Le temps s'arrête, la beauté est là,
 Dans ce coucher de soleil qui s'en va,
 Un instant de grâce, un moment de paix,
-Que l'on peut admirer à chaque fois qu'il se laisse voir, sans jamais se lasser.
-        <img src={sunset} />
+Que l'on peut admirer à chaque fois qu'il se laisse voir, sans jamais se lasser. */}
+<img src={Accordion.imageArticle} className='img-fluid' alt="" />
      
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
   
-  */}
+ 
   
 
-<div className='container'>
+{/* <div className='container'>
           <h1>Section Blog</h1>
           {
             data?.map((row) => (
@@ -155,11 +156,11 @@ Que l'on peut admirer à chaque fois qu'il se laisse voir, sans jamais se lasser
           <Link to="/">
             <button className="btn btn-primary">retourner a la page initial</button>
           </Link>
-        </div>
+        </div> */}
 
 
-        <div>Hello blog</div>
-        <button onClick={() => HandleFooter()} >active Footer</button>
+        {/* <div>Hello blog</div>
+        <button onClick={() => HandleFooter()} >active Footer</button> */}
     </>
   )
 };

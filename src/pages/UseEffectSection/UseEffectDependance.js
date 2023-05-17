@@ -1,5 +1,5 @@
 import React from 'react'
-import NavbarOffCanva from '../../components/NavbarBoot/NavbarOffCanva'
+import NavbarHome from '../../components/NavbarHome/NavbarHome'
 import CounterSimple from '../../components/Counter/CounterSimple'
 
 const UseEffectVide = () => {
@@ -22,7 +22,7 @@ const UseEffectVide = () => {
 
     return (
         <>
-            <NavbarOffCanva />
+            <NavbarHome />
             <div className="container">
                 <h1>Presentation du useEffect[dependance]</h1>
                   <p>Chaque fois que counter changera de valeur, useEffect s'activera et le title de l'onglet changera de valeur</p>

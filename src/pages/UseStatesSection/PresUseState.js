@@ -1,10 +1,10 @@
 import React from 'react'
-import NavbarOffCanva from '../../components/NavbarBoot/NavbarOffCanva'
+import NavbarHome from '../../components/NavbarHome/NavbarHome'
 
 const PresUseState = () => {
   return (
     <>
-      <NavbarOffCanva />
+      <NavbarHome />
       <div className="container">
         <h1>Presentation du UseState</h1>
         <p>useState est une fonction de la bibliothèque React qui permet de créer et de gérer des états locaux dans des composants fonctionnels.</p>

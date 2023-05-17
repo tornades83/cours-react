@@ -1,6 +1,6 @@
 import React from 'react'
-import NavbarOffCanva from '../../components/NavbarBoot/NavbarOffCanva'
-import UseEffectCompo from '../../components/UseEffectCompo/UseEffectCompo'
+import NavbarHome from '../../components/NavbarHome/NavbarHome'
+import UseEffectCompa from '../../components/UseEffectCompa/UseEffectCompa'
 
 const UseEffectVide = () => {
     const test = "blabla"
@@ -45,7 +45,7 @@ const UseEffectVide = () => {
 
     return (
         <>
-            <NavbarOffCanva />
+            <NavbarHome />
             <div className="container">
                 <h1>Presentation du useEffect[]</h1>
                 <div className="bg-dark text-light p-5 rounded-4">
@@ -53,7 +53,7 @@ const UseEffectVide = () => {
                     
                 </div>
             </div>
-            <UseEffectCompo />
+            <UseEffectCompa />
 
         </>
     )
