@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Formik, Field } from 'formik';
 import * as yup from 'yup';
-
+import { Link } from 'react-router-dom';
 
 import { Row, Form, Col, Button } from 'react-bootstrap';
 
@@ -38,7 +38,7 @@ const schema = yup.object().shape({
 
 function FormikExemple() {
     const [errorMessage, setErrorMessage] = useState(false); // s'affichera  en cas d'erreur de fetch !
- const [password, setPassworld] = useState();
+    const [passwordType, setpasswordType] = useState("password");
     const navigate = useNavigate();
     const [state, setState] = useState({
         isLoading: false
@@ -105,7 +105,7 @@ function FormikExemple() {
                                 name="password"
                                 value={values.password}
                                 placeholder="Mot de passe"
-                                type="text"
+                                type={passwordType}
                                 onChange={handleChange}
                             />
                         </Form.Group>
@@ -172,4 +172,4 @@ function FormikExemple() {
     );
 };
 
-export default FormikExemple;
+export default FormikExemple

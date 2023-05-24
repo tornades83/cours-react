@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { useForm } from 'react-hook-form';
 
-export default function HFblur() {
+export default function HfBlur() {
   const {
     register,
     formState: { errors },
@@ -44,6 +44,6 @@ export default function HFblur() {
         </div>
         <button type="submit">Submit</button>
       </form>
-    </div>
-  );
+    </div>
+  );
 }

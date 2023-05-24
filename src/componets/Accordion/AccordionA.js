@@ -49,15 +49,15 @@ const [language, setLanguage] = useState();
 
         <Accordion bg="info" variant="info" defaultActiveKey="0" >
       <Accordion.Item eventKey="0">
-      <Accordion.Header>{ language === "fr" ? Accordion.title :Accordion.titleEn}</Accordion.Header>
+      <Accordion.Header>{ language === "fr" ? Accordion.title :Accordion.titleEn ? Accordion.title : Accordion.titleHe}</Accordion.Header>
         <Accordion.Body>
         <img src={Accordion.imageArticle} className='img-fluid' alt="" />
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">
-        <Accordion.Header>{ language === "fr" ? Accordion.title : Accordion.titleEn}</Accordion.Header>
+        <Accordion.Header>{ language === "fr" ? Accordion.title : Accordion.titleEn ? Accordion.title : Accordion.titleHe}</Accordion.Header>
         <Accordion.Body>
-        { language === "fr" ? Accordion.articles.slice(0, 100) : Accordion.articleEn?.slice(0, 100)}...
+        { language === "fr" ? Accordion.articles.slice(0, 100) : Accordion.articleEn?.slice(0, 100) ? Accordion.articles?.slice(0, 100) : Accordion.articleHe?.slice(0, 100)}...
 {/* React.js est une bibliothèque JavaScript open source développée par Facebook. Elle permet de créer des interfaces utilisateur (UI) dynamiques et réactives. Contrairement aux frameworks traditionnels comme Angular ou Backbone, React.js se concentre uniquement sur la vue d'une application, ce qui permet de créer des interfaces utilisateur modulaires et réutilisables.
 
 React.js utilise un concept appelé « composants ». Les composants sont des éléments d'interface utilisateur réutilisables qui peuvent être utilisés pour créer des pages Web complexes. Les composants peuvent être des éléments d'interface utilisateur simples comme des boutons ou des champs de formulaire, ou des éléments plus complexes comme des tableaux de données ou des graphiques.
@@ -70,9 +70,9 @@ En résumé, React.js est une bibliothèque JavaScript puissante et populaire qu
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="2">
-        <Accordion.Header>{ language === "fr" ? Accordion.title : Accordion.titleEn} </Accordion.Header>
+        <Accordion.Header>{ language === "fr" ? Accordion.title : Accordion.titleEn ? Accordion.title : Accordion.titleHe} </Accordion.Header>
         <Accordion.Body>
-        { language === "fr" ? Accordion.articles.slice(0, 100) : Accordion.articleEn?.slice(0, 100)}...
+        { language === "fr" ? Accordion.articles.slice(0, 100) : Accordion.articleEn?.slice(0, 100) ? Accordion.articles?.slice(0, 100) : Accordion.articleHe?.slice(0, 100)}...
         {/* Cependant, en tant que technologie émergente, l'avenir de l'IA est prometteur et ouvre la voie à de nombreuses applications potentielles dans de nombreux domaines, tels que la médecine, la finance, la sécurité, l'éducation et bien d'autres. De plus en plus d'entreprises et d'organisations adoptent l'IA pour améliorer leur efficacité et leur productivité.
 
 Bien sûr, comme toute technologie, l'IA soulève également des questions et des préoccupations éthiques et sociales, telles que la protection des données, la transparence, la responsabilité et l'impact sur l'emploi et la société dans son ensemble. C'est pourquoi il est important de poursuivre la recherche et le développement de l'IA de manière responsable et éthique, en tenant compte de ces questions et en cherchant des solutions pour les aborder.
@@ -97,16 +97,16 @@ En somme, l'IA offre de nombreux avantages et peut aider à résoudre certains d
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="3">
-      <Accordion.Header>{ language === "fr" ? Accordion.title : Accordion.titleEn}</Accordion.Header>
+      <Accordion.Header>{ language === "fr" ? Accordion.title : Accordion.titleEn ? Accordion.title : Accordion.titleHe}</Accordion.Header>
         <Accordion.Body>
         <img src={Accordion.imageArticle} className='img-fluid' alt="" />
       
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="4 ">
-      <Accordion.Header>{ language === "fr" ? Accordion.title : Accordion.titleEn}</Accordion.Header>
+      <Accordion.Header>{ language === "fr" ? Accordion.title : Accordion.titleEn ? Accordion.title : Accordion.titleHe}</Accordion.Header>
         <Accordion.Body>
-        { language === "fr" ? Accordion.articles.slice(0, 100) : Accordion.articleEn?.slice(0, 100)}...
+        { language === "fr" ? Accordion.articles.slice(0, 100) : Accordion.articleEn?.slice(0, 100)? Accordion.articles?.slice(0, 100) : Accordion.articleHe?.slice(0, 100)}...
 
 {/* Le soleil doucement s'endort,
 Dans un éclat de couleurs d'or,

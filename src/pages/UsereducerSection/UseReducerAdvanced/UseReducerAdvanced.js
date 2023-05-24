@@ -10,6 +10,9 @@ function reducer(state, action) {
             }
             return { ...state, count: state.count + 1 }
         case ACTION.DECREMENT:
+            if (state.count = -11) {
+                return { ...state, count: 613 }
+            }
             return { ...state, count: state.count - 1 }
         case ACTION.INIT:
             return { ...state, count: count.count, userInput: "" }
