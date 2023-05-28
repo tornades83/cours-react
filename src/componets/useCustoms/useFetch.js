@@ -6,7 +6,7 @@ const useFetch = (url) => {
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(null);
     const [error, seterror] = useState();
-    const [nathan] = useState("nathan a compris");
+    const [yonathan] = useState("Yonathan a compris");
 
     useEffect(() => {
         // etat de depart
@@ -38,7 +38,7 @@ const useFetch = (url) => {
 
     }, [url]);
 
-    return { data, loading , error, nathan}
+    return { data, loading , error, yonathan }
 }
 
 export default useFetch

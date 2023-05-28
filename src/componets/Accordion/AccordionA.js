@@ -5,27 +5,14 @@ import sunset from "../../assets/sunset.jpg";
 import tree from "../../assets/tree.jpg";
 import axios from "axios"
 import i18n from '../../i18n/config'
-import { Link } from 'react-router-dom';
-
+import { Link, useFetcher } from 'react-router-dom';
+import useFetch from '../useCustoms/useFetch';
 const AccordionA = () => {
-  const [data, setData] = useState();
   const [activeFooter, setActiveFooter] = useState(false);
 
-  useEffect(() => {
-    
-    console.log("mon composant est montE")
 
-    axios.get('https://crud-webscoll-98c465.appdrag.site/api/getAlArticle', {
-      params: {
-        "AD_PageNbr": "1",
-        "AD_PageSize": "500"
-      }
-    }).then(function (response) {
-      console.log(response.data.Table);
-      setData(response.data.Table)
-    });
+const { data, loading, error} = useFetch('https://crud-webscoll-98c465.appdrag.site/api/getAlArticle');
 
-  }, []);
 const [language, setLanguage] = useState();
   useEffect(() => {
     const handleChangeLanguage = () => {
