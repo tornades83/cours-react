@@ -5,8 +5,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from "react-router-dom";
-
-import { Provider } from 'react';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import rootReducer from './rootReducer';
 import store from './redux/store/store'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

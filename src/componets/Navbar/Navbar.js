@@ -3,6 +3,7 @@ import   "./Navbar.css";
 import {Link} from 'react-router-dom'
 import {Dropdown} from "react-bootstrap"
 import  DropI18N from "../DropI18N/DropI18N";
+import DarkModeNav from '../../pages/DarkModeNav/DarkModeNav'
 const Navbar = () => {
 //  const changeOnOver = () => {
 //   const element = document.getElementsByClassName("flex-menu")[0]
@@ -17,6 +18,7 @@ const Navbar = () => {
            <Link to="/cv"> C.V.</Link>
            <Link to="/Blog">Blog</Link>
            <Link to="/contact">Contact</Link>
+           <DarkModeNav />
            {/* <Link to="/ProjectReact">Project</Link> */}
            <Dropdown>
             <Dropdown.Toggle variant="dark" id="dropdown-basic">

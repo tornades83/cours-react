@@ -6,6 +6,7 @@ import {Navbar} from 'react-bootstrap';
 import {NavDropdown} from 'react-bootstrap';
 import {Link} from 'react-router-dom'
 import  DropI18N from '../DropI18N/DropI18N';
+import DarkModeNav from '../../pages/DarkModeNav/DarkModeNav'
 import "./navbarA.css"
 
 const NAvbarA = () => {
@@ -21,6 +22,7 @@ const NAvbarA = () => {
             {/* <Nav.Link href="/cv">Mon C.V.</Nav.Link> */}
             <Nav.Link href="/Blog">Blog</Nav.Link>
             <Nav.Link href="/Cv">Cv</Nav.Link>
+<DarkModeNav />
             {/* <Nav.Link href="/ProjectReact">Project</Nav.Link> */}
           <NavDropdown title="Dropdown" id="basic-nav-dropdown">
             <NavDropdown.Item as={Link} to={"/Compteur"} >Compteur</NavDropdown.Item>

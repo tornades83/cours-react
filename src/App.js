@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import './App.css';
 import Home from "./pages/home/home";
 import Cv from './pages/Cv/Cv';
@@ -65,6 +66,8 @@ import StyleReact from "./pages/StyleReact/StyleReact"
 import Login from "./pages/Login/Login"
 
 function App() {
+
+ 
   //const [name, setName] = useState("Yonathan Ephraim Meir roos");
   const [name, setName] = useState("Yonathan Ephraim Meir roos");
   // const HandleName = (cb) => {
@@ -78,6 +81,8 @@ function App() {
   return (
 
 <div>
+
+
 <BrowserRouter >
 {/* <Layout> */}
   <Routes>

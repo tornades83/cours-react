@@ -6,6 +6,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import  {Offcanvas}  from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import  DropI18N from "../DropI18N/DropI18N";
+import DarkModeNav from '../../pages/DarkModeNav/DarkModeNav'
 
 import "./NavbarHome.css"
 const NavbarHome = (props) => {
@@ -46,7 +47,7 @@ const NavbarHome = (props) => {
     <Link className='rouge' to="/Portfolio">Portfolio</Link>
            <Link className='rouge' to="/cv"> C.V.</Link>
            <Link className='rouge' to="/Blog">Blog</Link>
-
+<DarkModeNav />
            <Nav.Link as={Link} to="/login">Login</Nav.Link>
 
 
