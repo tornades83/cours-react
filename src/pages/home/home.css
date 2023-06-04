@@ -1,8 +1,12 @@
 body{
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+    display: flex;
+    flex-direction: column;
 }
-
+#yon{
+    background-color: blueviolet;
+ flex-grow: 1;
+}
 .home{
-    background-color: rgb(143, 75, 27);
+    background-color:  rgb(151, 103, 15);
+    flex-grow: 1;
 }

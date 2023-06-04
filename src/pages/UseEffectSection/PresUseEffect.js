@@ -1,5 +1,5 @@
 import React from 'react'
-import NavbarHome from '../../components/NavbarHome/NavbarHome'
+import NavbarHome from '../../componets/NavbarHome/NavbarHome'
 
 const PresUseEffect = () => {
 

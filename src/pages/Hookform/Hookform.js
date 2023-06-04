@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 
-export default function Hkbase() {
+export  function Hookform() {
   const { register, handleSubmit, watch, formState: { errors } } = useForm();
   const onSubmit = data => console.log(data);
 
@@ -22,3 +22,6 @@ export default function Hkbase() {
     </form>
   );
 }
+
+
+export default Hookform

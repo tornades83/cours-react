@@ -1,6 +1,6 @@
 import React from 'react'
-import NavbarHome from '../../components/NavbarHome/NavbarHome'
-import List from "../../components/List/List"
+import NavbarHome from '../../componets/NavbarHome/NavbarHome'
+import List from "../../componets/List/List"
 
 const UseStateList = () => {
 

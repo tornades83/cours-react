@@ -1,14 +1,18 @@
 import React from 'react'
-import NavbarHome from '../../components/NavbarHome/NavbarHome'
+import NavbarHome from '../../componets/NavbarHome/NavbarHome'
 
 const PresUseState = () => {
+const handleclick = (cb) => {
+  navigator.clipboard.writeText(cb)
+
+}
   return (
     <>
       <NavbarHome />
       <div className="container">
         <h1>Presentation du UseState</h1>
         <p>useState est une fonction de la bibliothèque React qui permet de créer et de gérer des états locaux dans des composants fonctionnels.</p>
-        <div className="bg-dark text-light p-5 rounded-4">
+        <div className="bg-dark text-light p-5 rounded-4" onClick={() => handleclick('const [state, setState] = useState("")') }>
           <p>const [state, setState] = useState("")</p>
         </div>
 

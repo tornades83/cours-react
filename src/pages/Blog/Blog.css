@@ -1,4 +1,9 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
 .blog {
     background-color: #0c344098;
     height:325px ;
+    flex-grow: 1;
 }

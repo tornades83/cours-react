@@ -1,7 +1,7 @@
 import React from 'react'
 // import Cesar from '../../components/Cesar/Cesar'
-import NavbarOffCanva from '../../components/NavbarBoot/NavbarOffCanva'
-import GrandPereC from '../../components/ReduxDrilling/GrandPereC'
+import NavbarOffCanva from '../../componets/NavbarHome/NavbarHome'
+import GrandPereC from '../../componets/ReduxDrilling/GrandPereC'
 
 const Test = () => {
   return (

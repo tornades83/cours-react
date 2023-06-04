@@ -8,10 +8,12 @@ const home = (props) => {
   
   return (
     <>
+    <div id="yon">
     <div className="home">
    <NavbarHome />
    <Welcome />
     <Footer name={props.name}/>
+   </div>
    </div>
     </>
   )

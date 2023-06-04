@@ -1,6 +1,6 @@
 import React from 'react'
-import NavbarHome from '../../components/NavbarHome/NavbarHome'
-import Object from '../../components/Object/Object'
+import NavbarHome from '../../componets/NavbarHome/NavbarHome'
+import Object from '../../componets/Object/Object'
 
 const UseStateObject = () => {
 

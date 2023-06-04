@@ -5,9 +5,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import  {Offcanvas}  from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import  DropI18N from "../DropI18N/DropI18N";
-import DarkModeNav from '../../pages/DarkModeNav/DarkModeNav'
-
+import { useSelector, useDispatch } from 'react-redux';
+import { toggleDarkMode } from '../Darkmode/darkModeActions';
 import "./NavbarHome.css"
 const NavbarHome = (props) => {
   const [isAuth, setIsAuth] = useState(false);
@@ -22,7 +21,12 @@ const NavbarHome = (props) => {
       setIsAuth(false)
     }
   }, []);
-
+  const darkMode = useSelector(state => state?.darkMode?.darkMode);
+  const dispatch = useDispatch();
+  
+  const handleToggleDarkMode = () => {
+    dispatch(toggleDarkMode());
+  };
 
   return (
 
@@ -47,7 +51,9 @@ const NavbarHome = (props) => {
     <Link className='rouge' to="/Portfolio">Portfolio</Link>
            <Link className='rouge' to="/cv"> C.V.</Link>
            <Link className='rouge' to="/Blog">Blog</Link>
-<DarkModeNav />
+           <button onClick={handleToggleDarkMode}>
+        {darkMode ? 'Activer le mode clair' : 'Activer le mode sombre'}
+      </button>
            <Nav.Link as={Link} to="/login">Login</Nav.Link>
 
 

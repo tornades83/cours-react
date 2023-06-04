@@ -1,6 +1,6 @@
 import React from 'react'
-import NavbarHome from '../../components/NavbarHome/NavbarHome'
-import Compteur from "../../components/Compteur/Compteur"
+import NavbarHome from '../../componets/NavbarHome/NavbarHome'
+import Compteur from "../../componets/Compteur/Compteur"
 
 const UseStateNumber = () => {
 

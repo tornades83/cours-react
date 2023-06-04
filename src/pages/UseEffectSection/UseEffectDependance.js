@@ -1,6 +1,6 @@
 import React from 'react'
-import NavbarHome from '../../components/NavbarHome/NavbarHome'
-import CounterSimple from '../../components/Counter/CounterSimple'
+import NavbarHome from '../../componets/NavbarHome/NavbarHome'
+import CounterSimple from '../../componets/Compteur/Compteur'
 
 const UseEffectVide = () => {
 

@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react'
+import axios from 'axios'
 import imgyonathan from "../../assets/profil-yonathan.png"
 import imgdesign from "../../assets/design.png"
 import imgintegration from "../../assets/integration.png"
@@ -24,11 +25,11 @@ const Main = () => {
 const [contact, setContact] = useState();
 
 
-   const [fName, setFName] = useState();
-   const [lName, setLName] = useState();
-   const [email, setEmail] = useState();
-   const [message, setMessage] = useState();
-   const axios = require('axios');
+   const [fName, setFName] = useState("");
+   const [lName, setLName] = useState("");
+   const [email, setEmail] = useState("");
+   const [message, setMessage] = useState("");
+  
    const handlContact = () => {
     setContact((getContact)=> ({...getContact, onclick }))  
    }
@@ -73,10 +74,10 @@ const [contact, setContact] = useState();
                 <h3>Experience</h3>
                 <ul>
                 
-                    <il>html, css, javaScript</il><br/>
-                    <il>jquery. rest & ajax</il><br/>
-                    <il>react, node.js, </il><br/>{/* mongoDB */}
-                    {/* <il>my SQL, python, php</il><br/> */}
+                    <li>html, css, javaScript</li><br/>
+                    <li>jquery. rest & ajax</li><br/>
+                    <li>react, node.js, </li><br/>{/* mongoDB */}
+                    {/* <li>my SQL, python, php</li><br/> */}
 
                 </ul>
             </div>

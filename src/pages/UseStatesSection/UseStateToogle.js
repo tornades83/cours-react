@@ -1,6 +1,6 @@
 import React from 'react'
-import NavbarHome from '../../components/NavbarHome/NavbarHome'
-import Toogle from "../../components/Toogle/Toogle"
+import NavbarHome from '../../componets/NavbarHome/NavbarHome'
+import Toogle from "../../componets/Toogle/Toogle"
 
 const UseStateToogle = () => {
 

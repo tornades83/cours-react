@@ -1,6 +1,6 @@
 import React from 'react'
-import NavbarHome from '../../components/NavbarBoot/NavbarOffCanva'
-import MouseMove from "../../page/MouseMove/MouseMove"
+import NavbarHome from '../../componets/NavbarHome/NavbarHome'
+import MouseMove from "../../pages/MouseMove/MouseMove"
 
 const UseEffectVide = () => {
 

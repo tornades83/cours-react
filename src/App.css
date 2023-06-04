@@ -1,9 +1,11 @@
 body{
   font-family: 'Russo One', sans-serif!important;
+
 }
 .conteneur {
   width: 1363px;
   margin: 0 auto;
+  flex-grow: 1;
 }
 
  header {

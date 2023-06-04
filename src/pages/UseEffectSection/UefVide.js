@@ -1,6 +1,6 @@
 import React from 'react'
-import NavbarHome from '../../components/NavbarHome/NavbarHome'
-import UseEffectCompa from '../../components/UseEffectCompa/UseEffectCompa'
+import NavbarHome from '../../componets/NavbarHome/NavbarHome'
+import UseEffectCompa from '../../componets/UseEffectCompo/UseEffectCompo'
 
 const UseEffectVide = () => {
     const test = "blabla"
