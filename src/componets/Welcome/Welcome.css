@@ -1,7 +1,7 @@
 .welcome {
     display: flex;
     flex-direction: column;
-    background-color: rgb(151, 103, 15);
+
     flex-grow: 1;
     text-align: center;
     

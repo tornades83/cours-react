@@ -6,7 +6,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import  {Offcanvas}  from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { toggleDarkMode } from '../Darkmode/darkModeActions';
+// import { toggleDarkMode } from '../Darkmode/darkModeActions';
 import "./NavbarHome.css"
 const NavbarHome = (props) => {
   const [isAuth, setIsAuth] = useState(false);
@@ -25,7 +25,8 @@ const NavbarHome = (props) => {
   const dispatch = useDispatch();
   
   const handleToggleDarkMode = () => {
-    dispatch(toggleDarkMode());
+    console.log("hello 3 ")
+   // dispatch(toggleDarkMode());
   };
 
   return (

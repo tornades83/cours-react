@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import NavbarHome from "../../componets/NavbarHome/NavbarHome";
+import NAvbarA from "../../componets/NavbarA/NAvbarA";
 import Welcome from '../../componets/Welcome/Welcome';
 import Footer from '../../componets/Footer/Footer';
 
@@ -10,7 +10,7 @@ const home = (props) => {
     <>
     <div id="yon">
     <div className="home">
-   <NavbarHome />
+   <NAvbarA />
    <Welcome />
     <Footer name={props.name}/>
    </div>

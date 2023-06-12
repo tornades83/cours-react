@@ -3,31 +3,32 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 
 import { useSelector, useDispatch } from "react-redux";
-import { toggleDarkMode } from "../Darkmode/darkModeActions";
+import { getDarkMode , setDarkMode} from "../../redux/slices/darkmode.slice";
+
 const Navbar = () => {
   //  const changeOnOver = () => {
   //   const element = document.getElementsByClassName("flex-menu")[0]
   //   element.style.border = "2px blue solid"
 
-  const darkMode = useSelector((state) => state?.darkMode?.darkMode);
+  const GETDARKMODE = useSelector(getDarkMode);
   const dispatch = useDispatch();
 
   const handleToggleDarkMode = () => {
-    console.log("first")
-    dispatch(toggleDarkMode());
+    console.log("hello 1 ")
+    dispatch(setDarkMode(!GETDARKMODE));
   };
 
   return (
-    <nav>
-      <div className="conteneur">
-        <div className="flex-menu">
+    <nav >
+      <div className="conteneur"  style={{backgroundColor : "red!important"}}>
+        <div className="flex-menu" >
           <Link to="/">Accueil</Link>
           <Link to="/Portfolio">Portfolio</Link>
           <Link to="/cv"> C.V.</Link>
           <Link to="/Blog">Blog</Link>
           <Link to="/contact">Contact</Link>
-          <button onClick={handleToggleDarkMode}>
-            {darkMode ? "Activer le mode clair" : "Activer le mode sombre"}
+          <button style={{backgroundColor : GETDARKMODE ?  "black" : "green" , color : GETDARKMODE ?  "white" : "red" }} onClick={handleToggleDarkMode}>
+            {GETDARKMODE ? "Light mode" : "dark Mode"}
           </button>
           {/* <Link to="/ProjectReact">Project</Link> */}
       

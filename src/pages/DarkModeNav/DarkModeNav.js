@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux';
-import { toggleDarkMode } from '../../componets/Darkmode/darkModeActions';
+
 
 
 const DarkModeNav = () => {
@@ -8,7 +8,7 @@ const DarkModeNav = () => {
     const dispatch = useDispatch();
   
     const handleToggleDarkMode = () => {
-      dispatch(toggleDarkMode());
+    //  dispatch(toggleDarkMode());
     };
   return (
     <div className={darkMode ? 'dark' : 'light'}>
